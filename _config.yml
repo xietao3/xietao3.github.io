@@ -1,8 +1,8 @@
 # Basic
-title: Vno Jekyll
-subtitle: A blog-orientation theme for Jekyll
-welcome_message: <a href="https://github.com/onevcat/vno-jekyll" target="_blank">Download the theme</a>
-description: Vno Jekyll is a port of my Ghost theme vno.
+title: xietao3
+subtitle: 人生之旅，学习之路
+# welcome_message: <a href="https://github.com/onevcat/vno-jekyll" target="_blank">Download the theme</a>
+description: 你好，我是谢涛！欢迎来到我的个人主页.</br>我是一名码农，目前就职于上海天天果园，任职iOS高级开发工程师。
 creator: <a href="http://xietao3.com</a>
 
 url: "http://xietao3.com"
@@ -17,12 +17,12 @@ cover_color: orange
 
 # The blog button should not be removed.
 blog_button:
-    title: Blog
-    description: Visit blog
+    title: 博客
+    description: 进入博客
 
 # Navigation buttons in the front page.
-nav:
-    - {title: Projects, description: My Projects, url: 'http://project.xietao3.com'}
+# nav:
+#     - {title: Projects, description: My Projects, url: 'http://project.xietao3.com'}
     # - {title: Another Button, description: A button, url: 'http://example.com'}
 
 # Pagination
