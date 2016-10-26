@@ -5,6 +5,7 @@ GEM
     backports (3.6.8)
     colorator (1.1.0)
     ffi (1.9.14)
+    ffi (1.9.14-x86-mingw32)
     forwardable-extended (2.6.0)
     jekyll (3.2.1)
       colorator (~> 1.0)
@@ -61,6 +62,7 @@ GEM
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
   jekyll
@@ -68,4 +70,4 @@ DEPENDENCIES
   jekyll-paginate
 
 BUNDLED WITH
-   1.13.5
+   1.13.6
