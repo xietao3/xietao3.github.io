@@ -52,8 +52,6 @@ $ bundler install
 </br>
 // 启动服务（此后启动站点服务都用👇这句，能实时加载新文章和页面改动，而不用重新启动服务）
 $ bundler exec jekyll serve
-
-
 </pre>
 
 #模板内容
