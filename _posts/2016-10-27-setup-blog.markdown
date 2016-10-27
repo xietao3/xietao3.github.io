@@ -1,11 +1,10 @@
 ---
-layout: post
 title: Jekyll + Github Pages构建个人技术博客
+layout: post
 author: 谢涛
-date: 2016-10-27 18:31:24.000000000 +09:00
+date: '2016-10-27 17:31:24 +0800'
 categories: Blog
 ---
-
 
 >写技术博客可以积累并且巩固所学的知识，温故知新，还能传播知识，帮助他人解决问题。
 
@@ -14,7 +13,7 @@ categories: Blog
 搭建专属于自己的博客，是每一个码农都会想要去实现的，以前自己也曾想要搭建，但是总有无从下手的感觉，随着知识阅历的提升，知道了一些搭建的方式，时机成熟，买下了梦寐已久的域名，便开始动手搭建。
 
 #参考
-+ [这里是官方介绍](https://jekyllrb.com/docs/quickstart/)
++ [这里是官方介绍](http://jekyllcn.com/docs/quickstart/)
 + [如何快速给自己构建一个温馨的"家"——用Jekyll搭建静态博客](http://www.jianshu.com/p/9a6bc31d329d)
 + [喵神的Vno Jekyll](http://vno.onevcat.com/2016/02/hello-world-vno/)
 
