@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+  <title>Jekyll + Github Pages构建个人技术博客</title>
+  <meta name="description" content="  写技术博客可以积累并且巩固所学的知识，温故知新，还能传播知识，帮助他人解决问题。">
+  <meta name="author" content="xie tao">
+
+<!--   <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Jekyll + Github Pages构建个人技术博客">
+  <meta name="twitter:description" content="  写技术博客可以积累并且巩固所学的知识，温故知新，还能传播知识，帮助他人解决问题。"> -->
+  
+<!--   <meta property="og:type" content="article">
+  <meta property="og:title" content="Jekyll + Github Pages构建个人技术博客">
+  <meta property="og:description" content="  写技术博客可以积累并且巩固所学的知识，温故知新，还能传播知识，帮助他人解决问题。"> -->
+  
+  <link rel="icon" type="image/png" href="/assets/images/favicon.ico" />
+  <link href="/assets/images/favicon.ico" rel="shortcut icon" type="image/png">
+  
+  <link rel="stylesheet" href="/css/main.css">
+  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <link rel="canonical" href="http://xietao3.com/2016/10/setup-blog/">
+  <link rel="alternate" type="application/rss+xml" title="xietao3" href="http://xietao3.com/feed.xml">
+  
+  <meta name="google-site-verification" content="1-1ZlHoRvM0T2FqPbW2S-qLgYXN6rsn52kErlMPd_gw" />
+  
+</head>
+
+
+  <body>
+
+    <span class="mobile btn-mobile-menu">
+        <i class="fa fa-list btn-mobile-menu__icon"></i>
+        <i class="fa fa-angle-up btn-mobile-close__icon hidden"></i>
+    </span>
+    
+    <header class="panel-cover panel-cover--collapsed" style="background-image: url('/assets/images/background-cover.jpg')">
+  <div class="panel-main">
+
+    <div class="panel-main__inner panel-inverted">
+    <div class="panel-main__content">
+
+        <a href="/#blog" title="前往 xietao3 的主页" class="blog-button"><img src="/assets/images/avatar.jpg" width="80" alt="xietao3 logo" class="panel-cover__logo logo" /></a>
+        <h1 class="panel-cover__title panel-title"><a href="/#blog" title="前往 xietao3 的主页" class="blog-button">xietao3</a></h1>
+        
+        <span class="panel-cover__subtitle panel-subtitle">探索之旅，学习之路</span>
+        
+        <hr class="panel-cover__divider" />
+        <p class="panel-cover__description">你好，我是谢涛！欢迎来到我的个人主页.</br>我是一名码农，目前就职于上海天天果园，任职iOS高级开发工程师。</p>
+        <hr class="panel-cover__divider panel-cover__divider--secondary" />
+        
+        
+        
+        <div class="navigation-wrapper">
+          <div>
+            <nav class="cover-navigation cover-navigation--primary">
+              <ul class="navigation">
+                <li class="navigation__item"><a href="/#blog" title="进入博客" class="blog-button">博客</a></li>
+                
+              </ul>
+            </nav>
+          </div>
+          
+          <div><nav class="cover-navigation navigation--social">
+  <ul class="navigation">
+
+  
+  <!-- Weibo -->
+  <li class="navigation__item">
+    <a href="http://weibo.com/xietao3" title="@xietao3 的微博" target="_blank">
+      <i class='social fa fa-weibo'></i>
+      <span class="label">Weibo</span>
+    </a>
+  </li>
+  
+
+  
+  <!-- Github -->
+  <li class="navigation__item">
+    <a href="https://github.com/xietao3" title="@xietao3 的 Github" target="_blank">
+      <i class='social fa fa-github'></i>
+      <span class="label">Github</span>
+    </a>
+  </li>
+  
+  
+  
+
+  
+
+  <!-- RSS -->
+  <li class="navigation__item">
+    <a href="/feed.xml" rel="author" title="RSS" target="_blank">
+      <i class='social fa fa-rss'></i>
+      <span class="label">RSS</span>
+    </a>
+  </li>
+
+  
+
+  </ul>
+</nav>
+</div>
+        </div>
+      </div>
+    </div>
+    
+    
+    <div class="panel-cover--overlay cover-orange"></div>
+    
+  </div>
+</header>
+
+
+    <div class="content-wrapper">
+        <div class="content-wrapper__inner">
+            <article class="post-container post-container--single" itemscope itemtype="http://schema.org/BlogPosting">
+  <header class="post-header">
+    <div class="post-meta">
+      <time datetime="2016-10-27 17:31:24 +0800" itemprop="datePublished" class="post-meta__date date">2016-10-27</time> &#8226; <span class="post-meta__tags tags"></span>
+    </div>
+    <h1 class="post-title">Jekyll + Github Pages构建个人技术博客</h1>
+  </header>
+
+  <section class="post">
+    <blockquote>
+  <p>写技术博客可以积累并且巩固所学的知识，温故知新，还能传播知识，帮助他人解决问题。</p>
+</blockquote>
+
+<p>#前言</p>
+
+<p>搭建专属于自己的博客，是每一个码农都会想要去实现的，以前自己也曾想要搭建，但是总有无从下手的感觉，随着知识阅历的提升，知道了一些搭建的方式，时机成熟，买下了梦寐已久的域名，便开始动手搭建。</p>
+
+<p>#参考</p>
+<ul>
+  <li><a href="https://jekyllrb.com/docs/quickstart/">这里是官方介绍</a></li>
+  <li><a href="http://www.jianshu.com/p/9a6bc31d329d">如何快速给自己构建一个温馨的”家”——用Jekyll搭建静态博客</a></li>
+  <li><a href="http://vno.onevcat.com/2016/02/hello-world-vno/">喵神的Vno Jekyll</a></li>
+</ul>
+
+<p>#安装Jekyll</p>
+<pre>
+//打开命令行 使用gem安装Jekyll
+gem install jekyll
+</pre>
+
+<p>#启动Jekyll服务</p>
+<pre>
+//使用Jekyll创建你的博客站点
+jekyll new blogname
+&lt;/br&gt;
+//进入blog目录
+cd blogname 
+&lt;/br&gt;
+//在blog文件夹内 开启Jekyll服务
+jekyll serve
+&lt;/br&gt;
+//启动成功会提示站点地址,一般是[127.0.0.1:4000](http://127.0.0.1:4000),打开后就可以看到自己新建的站点
+</pre>
+
+<p>#下载模板</p>
+<pre>
+// 过程中缺什么工具灵活安装
+// 下载模板
+$ git clone https://github.com/onevcat/vno-jekyll.git your_site
+&lt;/br&gt;
+// 切换到模板所在的目录下
+$ cd your_site
+&lt;/br&gt;
+// 安装打包工具
+$ bundler install
+&lt;/br&gt;
+// 启动服务（此后启动站点服务都用👇这句，能实时加载新文章和页面改动，而不用重新启动服务）
+$ bundler exec jekyll serve
+
+
+</pre>
+
+<p>#模板内容</p>
+
+<p>######1. 需要调整的文件：</p>
+
+<ul>
+  <li><code class="highlighter-rouge">_config.yml</code>——–博客配置文件，需要根据自身的情况修改</li>
+  <li><code class="highlighter-rouge">_posts</code>————-新文章扔进这里</li>
+  <li><code class="highlighter-rouge">_includes</code>———-页眉页脚等模板放在这里，根据自身的情况修改</li>
+  <li><code class="highlighter-rouge">assets</code>————-favicon、头像、首页背景图在这里面，可以直接替换</li>
+  <li><code class="highlighter-rouge">CNAME</code>————–自定义域名放在这里面</li>
+  <li><code class="highlighter-rouge">README.md</code>———-Github说明，需要根据自身的情况修改</li>
+  <li><code class="highlighter-rouge">feed.xml</code>———–订阅</li>
+  <li><code class="highlighter-rouge">_site</code>————–自动生成的博客内容,<code class="highlighter-rouge">index.html</code>需要根据情况修改</li>
+</ul>
+
+<p>######2. 以下文件不建议修改：</p>
+
+<ul>
+  <li><code class="highlighter-rouge">_layouts</code>———–文章模板</li>
+  <li><code class="highlighter-rouge">index.html</code>———首页模板</li>
+  <li><code class="highlighter-rouge">其他的...不要在意这些细节（不会用😅）</code></li>
+</ul>
+
+<p>######3. 更多jekyll模板</p>
+<ul>
+  <li><a href="http://jekyllthemes.org/">更多jekyll模板</a>，使用方式同上。
+&lt;/br&gt;</li>
+</ul>
+
+<h1 id="section">套用模板：</h1>
+<pre>
+直接将修改后的模板内容copy到其他文件夹,再执行下面两句命令：
+$ bundler install
+$ bundler exec jekyll serve
+即可运行成功
+</pre>
+
+<p>#提交至Github Pages</p>
+<ol>
+  <li>在Github上<code class="highlighter-rouge">Create a new repository</code>
+    <ul>
+      <li>填写<code class="highlighter-rouge">Repository name</code>的格式为<code class="highlighter-rouge">username.github.io</code>(需要严格遵守)，其中<code class="highlighter-rouge">username</code>用自己取的名字的替换</li>
+      <li>设置自定义域名<code class="highlighter-rouge">Settings</code>-&gt;<code class="highlighter-rouge">Custom domain</code>，或者本地目录创建<code class="highlighter-rouge">CNAME</code>亦可</li>
+      <li>把本地的文件夹提交至改项目即可在<code class="highlighter-rouge">username.github.io</code>该网页看到自己的博客了</li>
+      <li>这里是我的博客地址：<a href="http://xietao3.com">xietao3.com</a> 以供参考</li>
+    </ul>
+  </li>
+</ol>
+
+<p>#结语</p>
+<blockquote>
+  <p>虽然写出来只有这么短短的一篇，背后其实花了不少心血；
+在搭建过程中，我也遇到过很多问题，遇到问题的时候不要轻易放弃，希望各位也是如此；
+其次写下这篇总结，由于我是先搭建完成然后再写的总结，具体按步骤实施下来出现种种问题，希望读者多多包容和提点。</p>
+</blockquote>
+
+  </section>
+</article>
+
+<section class="read-more">
+   
+   
+   
+   
+   <div class="read-more-item">
+       <span class="read-more-item-dim">更早的文章</span>
+       <h2 class="post-list__post-title post-title"><a href="/2016/10/my-first-article/" title="link to 我的第一篇Markdown文章">我的第一篇Markdown文章</a></h2>
+       <p class="excerpt">#我的第一篇Markdown文章  这是激动人心的时刻学习上传文章🚀😊&hellip;</p>
+       <div class="post-list__meta"><time datetime="2016-10-26 16:07:24 +0800" class="post-list__meta--date date">2016-10-26</time> &#8226; <span class="post-list__meta--tags tags"></span><a class="btn-border-small" href=/2016/10/my-first-article/>继续阅读</a></div>
+   </div>
+   
+</section>
+
+<section class="post-comments">
+  
+    <div id="disqus_thread"></div>
+    <script>
+    
+    var disqus_config = function () {
+        this.page.url = "http://xietao3.com/2016/10/setup-blog/";
+        this.page.identifier = "/2016/10/setup-blog/";
+    };
+
+    var disqus_shortname = 'vno-jekyll';
+    
+    (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+            (d.head || d.body).appendChild(s);
+        })();
+    </script>
+    <noscript>要查看<a href="http://disqus.com/?ref_noscript"> Disqus </a>评论，请启用 JavaScript</noscript>
+    
+  
+  
+  
+  
+</section>
+
+
+            <section class="footer">
+    <footer>
+    	<span class="footer__copyright">本站点采用<a href="http://creativecommons.org/licenses/by-nc-sa/4.0/">知识共享 署名-非商业性使用-相同方式共享 4.0 国际 许可协议</a></span>
+        <span class="footer__copyright">本站由 <a href="http://xietao3.com/about">xietao3</a> 
+        创建，采用 <a href="https://github.com/onevcat/vno-jekyll">Vno - Jekyll</a> 作为主题，您可以在 GitHub 找到<a href="https://github.com/onevcat/OneV-s-Den">本站源码</a> - &copy; 2016</span>
+    </footer>
+</section>
+
+        </div>
+    </div>
+    
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+
+<script type="text/javascript" src="/js/highlight.pack.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+<script type="text/javascript" src="/js/main.js"></script>
+
+
+
+    
+  </body>
+
+</html>
