@@ -36,7 +36,7 @@
     
 
   {% elsif site.comment.duoshuo %}
-    <div class="ds-thread" data-category="$cat[catid]" data-thread-key="$article[aid]" data-title="$article[title]" data-author-key="$article[uid]"></div>
+    <div class="ds-thread" data-thread-key="{{ page.url }}" data-title="{{ page.title }}" data-author-key="{{page.author}}"></div>
 
     <script type="text/javascript">
     var duoshuoQuery = {short_name:"xietao3"};
