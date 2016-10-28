@@ -461,10 +461,14 @@ hr {
   background-image: -webkit-linear-gradient(-410deg, rgba(119, 31, 18, 0.6) 20%, rgba(30, 8, 5, 0.8));
   background-image: linear-gradient(140deg,rgba(119, 31, 18, 0.6) 20%, rgba(30, 8, 5, 0.8)); }
 
-.cover-orange {
+/*.cover-orange {
   background-color: rgba(174, 80, 4, 0.6);
   background-image: -webkit-linear-gradient(-410deg, rgba(174, 80, 4, 0.6) 20%, rgba(74, 34, 2, 0.8));
-  background-image: linear-gradient(140deg,rgba(174, 80, 4, 0.6) 20%, rgba(74, 34, 2, 0.8)); }
+  background-image: linear-gradient(140deg,rgba(174, 80, 4, 0.6) 20%, rgba(74, 34, 2, 0.8)); }*/
+.cover-orange {
+  background-color: rgba(222, 180, 134, 0.6);
+  background-image: -webkit-linear-gradient(-410deg, rgba(222, 180, 134, 0.6) 20%, rgba(111, 80, 70, 0.8));
+  background-image: linear-gradient(140deg,rgba(222, 180, 134, 0.6) 20%, rgba(111, 80, 70, 0.8)); }
 
 .cover-slate {
   background-color: rgba(61, 66, 96, 0.6);
