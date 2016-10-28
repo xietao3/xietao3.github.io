@@ -41,8 +41,8 @@ paginate_path: "page/:num/"
 
 # Comment
 comment:
-    disqus: xietao3
-    # duoshuo: 
+    # disqus: xietao3
+    duoshuo: xietao3
     
 # Social
 social:
