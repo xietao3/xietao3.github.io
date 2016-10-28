@@ -1,6 +1,7 @@
 <section class="post-comments">
-  {% if site.comment.disqus %}
-    <div id="disqus_thread"></div>
+   {% if site.comment.disqus %}
+    <!-- <div id="disqus_thread"></div>
+
     <script>
     
     var disqus_config = function () {
@@ -30,7 +31,22 @@
             ds.charset = 'UTF-8';
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
         })();
+    </script> -->
+
+       <div class="ds-thread" data-category="$cat[catid]" data-thread-key="$article[aid]" data-title="$article[title]" data-author-key="$article[uid]"></div>
+
+    <script type="text/javascript">
+var duoshuoQuery = {short_name:"xietao3"};
+    (function() {
+        var ds = document.createElement('script');
+        ds.type = 'text/javascript';ds.async = true;
+        ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+        ds.charset = 'UTF-8';
+        (document.getElementsByTagName('head')[0] 
+         || document.getElementsByTagName('body')[0]).appendChild(ds);
+    })();
     </script>
+
   {% endif %}
   
   
