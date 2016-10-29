@@ -2,6 +2,10 @@
    v2.0 | 20110126
    License: none (public domain)
 */
+/*f39ca4 A2CCFF 选中色 浅红色 2个*/
+/*BF1827 DEB887 普通色 大红色 6个*/
+/*7b0f19 8B5A2B 高亮色 深红色 7个*/
+/*92121e DEB887 table 大红色 2个*/
 @import url(animate.css);
 @import url(tomorrow.css);
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
@@ -60,16 +64,17 @@ body {
   -webkit-font-smoothing: antialiased; }
 
 ::selection {
-  background: #f39ca4; }
+  background: #A2CCFF; }
 
 ::-moz-selection {
-  background: #f39ca4; }
+  background: #A2CCFF; }
 
+/*链接颜色*/
 a {
   text-decoration: none;
-  color: #BF1827; }
+  color: #DEB887; }
   a:hover {
-    color: #7b0f19;
+    color: #8B5A2B;
     -o-transition: .5s;
     -ms-transition: .5s;
     -moz-transition: .5s;
@@ -125,7 +130,7 @@ blockquote {
   font-family: "ff-tisa-web-pro-1", "ff-tisa-web-pro-2", "Lucida Grande", "Hiragino Sans GB", "Hiragino Sans GB W3", "Microsoft YaHei", "WenQuanYi Micro Hei", sans-serif;
   font-weight: lighter;
   font-size: 1em;
-  border-left: 3px solid #BF1827; }
+  border-left: 3px solid #DEB887; }
   blockquote p:last-child {
     margin-bottom: 0; }
 
@@ -145,8 +150,8 @@ ul {
 
 code {
   padding: .1em .4em;
-  background: #e8f2fb;
-  border: 1px solid #c9e1f6;
+  background: #FFF5DC;
+  border: 1px solid #D3D3D3;
   border-radius: 3px;
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   font-size: .9em;
@@ -156,8 +161,8 @@ code {
 pre {
   margin-bottom: 1.3em;
   padding: 1em 2.5%;
-  background: #e8f2fb;
-  border: 1px solid #c9e1f6;
+  background: #FFF5DC;
+  border: 1px solid #D3D3D3;
   border-radius: 3px;
   font-family: Consolas, Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace, serif;
   font-size: .9em;
@@ -176,12 +181,12 @@ table {
   text-align: center;
   line-height: 40px;
   border-spacing: 0;
-  border: 2px solid #92121e;
+  border: 2px solid #DEB887;
   width: 90%;
   margin: 50px auto; }
 
 thead tr:first-child {
-  background-color: #92121e;
+  background-color: #DEB887;
   color: #F8F8F8;
   border: none; }
 
@@ -219,7 +224,7 @@ td:last-child {
     .time a:hover,
     .author a:hover,
     .tags a:hover {
-      color: #7b0f19; }
+      color: #8B5A2B; }
 
 .excerpt {
   margin: 0;
@@ -249,7 +254,7 @@ td:last-child {
   position: relative;
   display: inline-block;
   padding: 8px 18px 9px 18px;
-  background: #BF1827;
+  background: #DEB887;
   border-radius: 3px;
   text-align: center;
   color: #FFF; }
@@ -283,7 +288,7 @@ td:last-child {
     color: #a6a6a6;
     text-decoration: underline; }
     .footer__copyright a:hover {
-      color: #7b0f19; }
+      color: #8B5A2B; }
 
 .avatar,
 .logo {
@@ -461,10 +466,14 @@ hr {
   background-image: -webkit-linear-gradient(-410deg, rgba(119, 31, 18, 0.6) 20%, rgba(30, 8, 5, 0.8));
   background-image: linear-gradient(140deg,rgba(119, 31, 18, 0.6) 20%, rgba(30, 8, 5, 0.8)); }
 
-.cover-orange {
+/*.cover-orange {
   background-color: rgba(174, 80, 4, 0.6);
   background-image: -webkit-linear-gradient(-410deg, rgba(174, 80, 4, 0.6) 20%, rgba(74, 34, 2, 0.8));
-  background-image: linear-gradient(140deg,rgba(174, 80, 4, 0.6) 20%, rgba(74, 34, 2, 0.8)); }
+  background-image: linear-gradient(140deg,rgba(174, 80, 4, 0.6) 20%, rgba(74, 34, 2, 0.8)); }*/
+.cover-orange {
+  background-color: rgba(222, 180, 134, 0.6);
+  background-image: -webkit-linear-gradient(-410deg, rgba(222, 180, 134, 0.6) 20%, rgba(111, 80, 70, 0.8));
+  background-image: linear-gradient(140deg,rgba(222, 180, 134, 0.6) 20%, rgba(111, 80, 70, 0.8)); }
 
 .cover-slate {
   background-color: rgba(61, 66, 96, 0.6);
@@ -476,20 +485,20 @@ hr {
 
 .btn, .navigation__item a {
   padding: 10px 20px;
-  border: 1px solid #BF1827;
+  border: 1px solid #DEB887;
   border-radius: 20px;
   font-size: .9em;
   font-weight: bold;
   letter-spacing: 1px;
   text-shadow: none;
-  color: #BF1827;
+  color: #DEB887;
   -webkit-font-smoothing: antialiased; }
   .btn:hover, .navigation__item a:hover {
-    color: #7b0f19;
-    border-color: #7b0f19; }
+    color: #8B5A2B;
+    border-color: #8B5A2B; }
 
 .btn-border-small {
-  border: 1px solid #BF1827;
+  border: 1px solid #DEB887;
   border-radius: 20px;
   padding: 6px 8px;
   font-size: .8em;
@@ -619,7 +628,7 @@ i {
   .post-list__post-title a {
     color: #333333; }
     .post-list__post-title a:hover {
-      color: #7b0f19; }
+      color: #8B5A2B; }
 
 .post-list__meta {
   display: block;
@@ -746,7 +755,7 @@ input[type="tel"] {
   width: 48%; }
 
 .read-more-item-dim {
-  color: #7b0f19;
+  color: #8B5A2B;
   font-size: .8em; }
 
 @media all and (max-width: 1100px) {

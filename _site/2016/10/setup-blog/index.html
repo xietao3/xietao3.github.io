@@ -72,7 +72,9 @@
   
   <!-- Weibo -->
   <li class="navigation__item">
-    <a href="http://weibo.com/xietao3" title="@xietao3 的微博" target="_blank">
+  
+    <a href="http://weibo.com/u/2803559240" title="xietao3 的微博" target="_blank">
+    <!-- <a href="http://weibo.com/xietao3" title="xietao3 的微博" target="_blank"> -->
       <i class='social fa fa-weibo'></i>
       <span class="label">Weibo</span>
     </a>
@@ -82,7 +84,7 @@
   
   <!-- Github -->
   <li class="navigation__item">
-    <a href="https://github.com/xietao3" title="@xietao3 的 Github" target="_blank">
+    <a href="https://github.com/xietao3" title="xietao3 的 Github" target="_blank">
       <i class='social fa fa-github'></i>
       <span class="label">Github</span>
     </a>
@@ -91,6 +93,17 @@
   
   
 
+  
+
+  
+   <!-- CSDN -->
+  <li class="navigation__item">
+    <a href="http://blog.csdn.net/xietao3" title="xietao3 的 CSDN" target="_blank">
+      <img src="/assets/images/csdn.png" width="20" height="20" />
+      <!-- <i class='social fa fa-edit'></i> -->
+      <span class="label">csdn</span>
+    </a>
+  </li>
   
 
   <!-- RSS -->
@@ -132,24 +145,24 @@
   <p>写技术博客可以积累并且巩固所学的知识，温故知新，还能传播知识，帮助他人解决问题。</p>
 </blockquote>
 
-<p>#前言</p>
+<p>##前言</p>
 
 <p>搭建专属于自己的博客，是每一个码农都会想要去实现的，以前自己也曾想要搭建，但是总有无从下手的感觉，随着知识阅历的提升，知道了一些搭建的方式，时机成熟，买下了梦寐已久的域名，便开始动手搭建。</p>
 
-<p>#参考</p>
+<p>##参考</p>
 <ul>
   <li><a href="http://jekyllcn.com/docs/quickstart/">这里是官方介绍</a></li>
   <li><a href="http://www.jianshu.com/p/9a6bc31d329d">如何快速给自己构建一个温馨的”家”——用Jekyll搭建静态博客</a></li>
   <li><a href="http://vno.onevcat.com/2016/02/hello-world-vno/">喵神的Vno Jekyll</a></li>
 </ul>
 
-<p>#安装Jekyll</p>
+<p>##安装Jekyll</p>
 <pre>
 //打开命令行 使用gem安装Jekyll
 gem install jekyll
 </pre>
 
-<p>#启动Jekyll服务</p>
+<p>##启动Jekyll服务</p>
 <pre>
 //使用Jekyll创建你的博客站点
 jekyll new blogname
@@ -163,7 +176,7 @@ jekyll serve
 //启动成功会提示站点地址,一般是[127.0.0.1:4000](http://127.0.0.1:4000),打开后就可以看到自己新建的站点
 </pre>
 
-<p>#下载模板</p>
+<p>##下载模板</p>
 <pre>
 // 过程中缺什么工具灵活安装
 // 下载模板
@@ -177,11 +190,9 @@ $ bundler install
 &lt;/br&gt;
 // 启动服务（此后启动站点服务都用👇这句，能实时加载新文章和页面改动，而不用重新启动服务）
 $ bundler exec jekyll serve
-
-
 </pre>
 
-<p>#模板内容</p>
+<p>##模板内容</p>
 
 <p>######1. 需要调整的文件：</p>
 
@@ -210,7 +221,7 @@ $ bundler exec jekyll serve
 &lt;/br&gt;</li>
 </ul>
 
-<h1 id="section">套用模板：</h1>
+<p>##套用模板：</p>
 <pre>
 直接将修改后的模板内容copy到其他文件夹,再执行下面两句命令：
 $ bundler install
@@ -218,7 +229,7 @@ $ bundler exec jekyll serve
 即可运行成功
 </pre>
 
-<p>#提交至Github Pages</p>
+<p>##提交至Github Pages</p>
 <ol>
   <li>在Github上<code class="highlighter-rouge">Create a new repository</code>
     <ul>
@@ -230,7 +241,7 @@ $ bundler exec jekyll serve
   </li>
 </ol>
 
-<p>#结语</p>
+<p>##结语</p>
 <blockquote>
   <p>虽然写出来只有这么短短的一篇，背后其实花了不少心血；
 在搭建过程中，我也遇到过很多问题，遇到问题的时候不要轻易放弃，希望各位也是如此；
@@ -244,30 +255,36 @@ $ bundler exec jekyll serve
    
    
    
+   
+   <div class="read-more-item">
+       <span class="read-more-item-dim">更早的文章</span>
+       <h2 class="post-list__post-title post-title"><a href="/2016/09/study-markdown/" title="link to 学习Markdown">学习Markdown</a></h2>
+       <p class="excerpt">  这个世界太浮夸了，做技术的攀比也这么严重，还是要想想自己想要的是什么，再出发。#前言  这个是本人练手用滴，勿喷。#1、代码块NSSting *str = [[NSString alloc] init];str = @"123";NSLog(@"123")；&lt;/p&gt;+ Use the `printf()` function.+ ``There is a literal backtick (`) here.``+ Please don't use any `` tags.+ ...&hellip;</p>
+       <div class="post-list__meta"><time datetime="2016-09-30 17:31:24 +0800" class="post-list__meta--date date">2016-09-30</time> &#8226; <span class="post-list__meta--tags tags"></span><a class="btn-border-small" href=/2016/09/study-markdown/>继续阅读</a></div>
+   </div>
+   
 </section>
 
 <section class="post-comments">
-  
-    <div id="disqus_thread"></div>
-    <script>
-    
-    var disqus_config = function () {
-        this.page.url = "http://localhost:4000/2016/10/setup-blog/";
-        this.page.identifier = "/2016/10/setup-blog/";
-    };
-
-    var disqus_shortname = 'vno-jekyll';
-    
-    (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
+   
+    <div class="ds-thread" data-thread-key="/2016/10/setup-blog/" data-title="Jekyll + Github Pages构建个人技术博客" data-url="http://localhost:4000/2016/10/setup-blog/"></div>
+    <script type="text/javascript">
+        var duoshuoQuery = {short_name:"xietao3"};
+        (function() {
+            var ds = document.createElement('script');
+            ds.type = 'text/javascript';ds.async = true;
+            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
+            ds.charset = 'UTF-8';
+            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
         })();
     </script>
-    <noscript>要查看<a href="http://disqus.com/?ref_noscript"> Disqus </a>评论，请启用 JavaScript</noscript>
+
     
+
   
+
+
+
   
   
   
