@@ -28,6 +28,8 @@ cover_color: orange
 blog_button:
     title: 博客
     description: 进入博客
+nav:
+    - {title: 关于, description: 了解更多关于我, url: '/about/index.html'}
 
 # Navigation buttons in the front page.
 # nav:
