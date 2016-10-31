@@ -548,8 +548,8 @@ body.canvas-menu.mini-navbar nav.navbar-static-side {
 }
 
 .top-navigation .navbar-nav .dropdown-menu>.active>a {
-	background: #fff;
-	color: #3385FF;
+	background: #000000;
+	color: #000000;
 	font-weight: 700
 }
 
@@ -3899,7 +3899,7 @@ table.table-mail tr td {
 }
 
 .navy-bg {
-	background-color: #3385FF;
+	background-color: #DEB887;
 	color: #fff
 }
 
@@ -3977,7 +3977,7 @@ table.table-mail tr td {
 }
 
 .progress-bar {
-	background-color: #3385FF
+	background-color: #DEB887
 }
 
 .progress-small,.progress-small .progress-bar {
@@ -6810,7 +6810,7 @@ body.landing-page {
 }
 
 .landing-page span.navy {
-	color: #3385FF
+	color: #000000
 }
 
 .landing-page p.text-color {
@@ -6845,7 +6845,7 @@ body.landing-page {
 	width: 60px;
 	height: 1px;
 	margin: 60px auto 0;
-	border-bottom: 2px solid #3385FF
+	border-bottom: 2px solid #DEB887
 }
 
 .landing-page .navbar-wrapper {
@@ -6891,15 +6891,15 @@ body.landing-page {
 	padding-top: 25px;
 	border-top: 6px solid transparent
 }
-
+/*导航条相关*/
 .landing-page .navbar-default .navbar-nav>.active>a,.landing-page .navbar-default .navbar-nav>.active>a:hover {
 	background: 0 0;
 	color: #fff;
-	border-top: 6px solid #3385FF
+	border-top: 6px solid #DEB887
 }
 
 .landing-page .navbar-default .navbar-nav>li>a:focus,.landing-page .navbar-default .navbar-nav>li>a:hover {
-	color: #3385FF;
+	color: #DEB887;
 	background: inherit
 }
 
@@ -6936,7 +6936,7 @@ body.landing-page {
 }
 
 .landing-page .navbar-scroll.navbar-default .nav li a:hover {
-	color: #3385FF
+	color: #DEB887
 }
 
 .landing-page .navbar-wrapper .navbar.navbar-scroll {
