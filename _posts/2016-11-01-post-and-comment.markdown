@@ -44,26 +44,6 @@ comment:
 + 打开``_includes``文件夹，编辑``comments.html``文件，输入复制代码，部分代码如：
 
 <pre><code> 
-  
-   {% if site.comment.disqus %}
-
-    <div id="disqus_thread"></div>
-    <script>
-    var disqus_config = function () {
-        this.page.url = "{{ page.url | prepend: site.baseurl | prepend: site.url }}";
-        this.page.identifier = "{{ page.url }}";
-    };
-    var disqus_shortname = '{{ site.comment.disqus }}';
-    (function() { // DON'T EDIT BELOW THIS LINE
-        var d = document, s = d.createElement('script');
-        s.src = '//' + disqus_shortname + '.disqus.com/embed.js';
-        s.setAttribute('data-timestamp', +new Date());
-            (d.head || d.body).appendChild(s);
-        })();
-    </script>
-    <noscript>要查看<a href="http://disqus.com/?ref_noscript"> Disqus </a>评论，请启用 JavaScript</noscript>  
-  {% elsif site.comment.duoshuo %}  
-
     <div class="ds-thread" data-thread-key="{{ page.url }}" data-title="{{ page.title }}" data-url="{{ page.url | prepend: site.baseurl | prepend: site.url }}"></div>
     <script type="text/javascript">
         var duoshuoQuery = {short_name:"{{ site.comment.duoshuo }}"};
@@ -75,7 +55,7 @@ comment:
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
         })();
     </script>
-  {% endif %}
+
 </code></pre>
  + 重新打开文章详情页，底部就出现评论模块啦！
 
