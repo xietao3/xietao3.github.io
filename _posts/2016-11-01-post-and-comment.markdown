@@ -41,17 +41,8 @@ comment:
  duoshuo: 约定的Name
 </pre>
 + 在[多说](http://duoshuo.com/)注册好帐号，注册好之后``点击右上角 用户名->工具->获取代码->复制代码``
-+ 打开``_includes``文件夹，编辑``comments.html``文件，输入复制代码，部分代码如：
-
-<pre><code> 
-  
-   {% if site.comment.disqus %}
-   	...
-  {% elsif site.comment.duoshuo %}  
-  	代码贴到这个位置
-  {% endif %}
-</code></pre>
- + 重新打开文章详情页，底部就出现评论模块啦！
++ 打开``_includes``文件夹，编辑``comments.html``文件，输入复制代码
++ 重新打开文章详情页，底部就出现评论模块啦！
 
 ###结语
 > 在修改[关于我页面](http://xietao3.com/about/index.html)UI的时候，因为不懂CSS，花费了大量时间去找对应的参数，不放弃不将就，最终全部修改成自己希望看到的样子。
