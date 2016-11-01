@@ -28,7 +28,7 @@ title: 这个是标题
 date: 2016-04-16 11:11:11.000000000 +09:00
 tags: Jekyll
 author: xx
-layout: post  
+layout: post
 ---</pre>
 +  按照上面指定格式保存好文章之后，放进``_posts``文件夹里
 + 执行``$ bundler exec jekyll serve``后就能在博客里看到自己的文字了
@@ -41,10 +41,12 @@ comment:
  duoshuo: 约定的Name
 </pre>
 + 在[多说](http://duoshuo.com/)注册好帐号，注册好之后``点击右上角 用户名->工具->获取代码->复制代码``
-+ 打开``_includes``文件夹，编辑``comments.html``文件，输入复制代码，例如：
++ 打开``_includes``文件夹，编辑``comments.html``文件，输入复制代码，部分代码如：
 
-<pre><section class="post-comments">    
+<pre><code> 
+  
    {% if site.comment.disqus %}
+
     <div id="disqus_thread"></div>
     <script>
     var disqus_config = function () {
@@ -59,8 +61,9 @@ comment:
             (d.head || d.body).appendChild(s);
         })();
     </script>
-    <noscript>要查看<a href="http://disqus.com/?ref_noscript"> Disqus </a>评论，请启用 JavaScript</noscript>
-  {% elsif site.comment.duoshuo %}
+    <noscript>要查看<a href="http://disqus.com/?ref_noscript"> Disqus </a>评论，请启用 JavaScript</noscript>  
+  {% elsif site.comment.duoshuo %}  
+
     <div class="ds-thread" data-thread-key="{{ page.url }}" data-title="{{ page.title }}" data-url="{{ page.url | prepend: site.baseurl | prepend: site.url }}"></div>
     <script type="text/javascript">
         var duoshuoQuery = {short_name:"{{ site.comment.duoshuo }}"};
@@ -72,7 +75,8 @@ comment:
             (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
         })();
     </script>
-  {% endif %}</pre>
+  {% endif %}
+</code></pre>
  + 重新打开文章详情页，底部就出现评论模块啦！
 
 ###结语
