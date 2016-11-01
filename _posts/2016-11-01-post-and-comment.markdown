@@ -24,9 +24,9 @@ categories: Blog
 + 文章标题遵守``YYYY-MM-DD-文章标题.markdown``格式，``.md``结尾也是可以的
 + 文字顶部加入：
 <pre>
-<code>---</code>
-title: 这个是标题  
-date: 2016-04-16 11:11:11.000000000 +09:00  
+<code>---
+title: 这个是标题
+date: 2016-04-16 11:11:11.000000000 +09:00
 tags: Jekyll
 author: xx
 layout: post  
