@@ -23,29 +23,30 @@ categories: Blog
 ###文字发布
 + 文章标题遵守``YYYY-MM-DD-文章标题.markdown``格式，``.md``结尾也是可以的
 + 文字顶部加入：
-<pre>
-<code>---
+```
+---
 title: 这个是标题
 date: 2016-04-16 11:11:11.000000000 +09:00
 tags: Jekyll
 author: xx
-layout: post  
-<code>---</code>
-</pre>
+layout: post
+---
+```
+<pre></pre>
 +  按照上面指定格式保存好文章之后，放进``_posts``文件夹里
 + 执行``$ bundler exec jekyll serve``后就能在博客里看到自己的文字了
 
 ###增加评论模块
 +  打开``_config.yml``编辑：
-```
+<pre>
 # Comment
 comment:
  duoshuo: 约定的Name
-```
+</pre>
 + 在[多说](http://duoshuo.com/)注册好帐号，注册好之后``点击右上角 用户名->工具->获取代码->复制代码``
 + 打开``_includes``文件夹，编辑``comments.html``文件，输入复制代码，例如：
 
-```
+<pre>
 
 
 <section class="post-comments">    
@@ -78,7 +79,7 @@ comment:
         })();
     </script>
   {% endif %}
-```
+  </pre>
  + 重新打开文章详情页，底部就出现评论模块啦！
 
 ###结语
