@@ -44,20 +44,12 @@ comment:
 + 打开``_includes``文件夹，编辑``comments.html``文件，输入复制代码，部分代码如：
 
 <pre><code> 
-  <!--  
-   <div class="ds-thread" data-thread-key="{{ page.url }}" data-title="{{ page.title }}" data-url="{{ page.url | prepend: site.baseurl | prepend: site.url }}"></div>
-    <script type="text/javascript">
-        var duoshuoQuery = {short_name:"{{ site.comment.duoshuo }}"};
-        (function() {
-            var ds = document.createElement('script');
-            ds.type = 'text/javascript';ds.async = true;
-            ds.src = (document.location.protocol == 'https:' ? 'https:' : 'http:') + '//static.duoshuo.com/embed.js';
-            ds.charset = 'UTF-8';
-            (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(ds);
-        })();
-    </script>
-     -->
-
+  
+   {% if site.comment.disqus %}
+   	...
+  {% elsif site.comment.duoshuo %}  
+  	代码贴到这个位置
+  {% endif %}
 </code></pre>
  + 重新打开文章详情页，底部就出现评论模块啦！
 
