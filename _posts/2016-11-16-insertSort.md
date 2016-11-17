@@ -56,7 +56,7 @@ void insertSort(int arr[] ,int len) {
             int target = i;
             for (int j = i; j >= 0; j--) {
                 int compareNum = arr[j-1];
-                if (currentNum<compareNum) {
+                if (currentNum < compareNum) {
                     arr[j] = arr[j-1];
                     target = j-1;
                 }else{
