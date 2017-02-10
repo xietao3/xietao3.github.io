@@ -6,6 +6,7 @@ description: 你好，我是谢涛！欢迎来到我的个人主页.</br>90后�
 creator: <a href="http://xietao3.com</a>
 
 url: "https://xietao3.com"
+enforce_ssl: "xietao3.com"
 
 permalink: /:year/:month/:title/
 
