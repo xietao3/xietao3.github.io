@@ -5,20 +5,20 @@ subtitle: 探索之旅，学习之路
 description: 你好，我是谢涛！欢迎来到我的个人主页.</br>90后代码搬运工，目前就职于上海天天果园，任职iOS高级开发工程师。
 creator: <a href="http://xietao3.com</a>
 
-url: "http://xietao3.com"
+url: "https://xietao3.com"
 
 permalink: /:year/:month/:title/
 
 # Format
 highlighter: rouge
 
-markdown: redcarpet
-redcarpet:
-extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", tables]
+# markdown: redcarpet
+# redcarpet:
+# extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", tables]
 
-# markdown: kramdown
-# kramdown:
-#   input: GFM
+markdown: kramdown
+kramdown:
+  input: GFM
 
 
 # supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
