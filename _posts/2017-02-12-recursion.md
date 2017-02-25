@@ -5,7 +5,7 @@ author: 谢涛
 date: '2017-02-25 21:40:24 +0800'
 categories: Blog
 ---
-![循环](http://upload-images.jianshu.io/upload_images/1319710-902e959e981bf301.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
+![循环](http://upload-images.jianshu.io/upload_images/1319710-902e959e981bf301.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/640)
 >刷了一段时间剑指offer的算法题，收获了很多，其中对递归的印象尤其深。递归给我一种四两拨千斤的感觉。
 
 ##背景
@@ -112,8 +112,7 @@ int movingCount(int threshold, int rows, int cols)
         for (int j = 0; j < cols; j++) {
             row.push_back(0);
         }
-        recordHistory.push_back(row);
-        
+        recordHistory.push_back(row); 
     }
     recordPath(threshold, 2,0,0);
     printf("----%d",count);
@@ -161,7 +160,6 @@ int getSum(int number) {
     }
     return sum;
 }
-
 </pre></code>
 
 
