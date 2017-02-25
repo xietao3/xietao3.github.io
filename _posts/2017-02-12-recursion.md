@@ -35,7 +35,7 @@ for (int i = 0; i < array.size() ; i++) {
     printf("%d",array[i]);
 }
 // 输出结果:123456789
-<\pre><\code>
+</pre></code>
 上面的代码一目了然，这当然不是我们需要的效果，而文艺程序员是怎么干的？下面的例子使用递归的方式按顺序打印数组，并且准确地在边界处结束递归。
 <pre><code>
 int main(int argc, const char * argv[]) {
@@ -52,7 +52,7 @@ void printfNumber(std::vector<int>array, int i) {
     printfNumber(array, i);
 }
 // 输出结果:123456789
-<\pre><\code>
+</pre></code>
 上面的代码乍一看递归的方式比使用for循环的方式需要更多的代码，但是在比较复杂的调用中，递归才是简洁代码，四两拨千斤的高手。
 
 ##递归调用语句的位置
@@ -66,7 +66,7 @@ void reversePrintfNumber(std::vector<int>array, int i) {
     printf("%d",array[--i]);
 }
 // 输出结果reverse:987654321
-<\pre><\code>
+</pre></code>
 总结下来就是:在循环调用中，递归语句前面的函数都是按顺序执行，递归语句后面的函数都是逆序执行（也就是在最后一个循环的语句反而最先被调用），就是这么简单😂。
 
 ![中场休息](http://upload-images.jianshu.io/upload_images/1319710-79fe62d5e14f41ed.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
@@ -97,7 +97,7 @@ public:
         Mirror(pRoot->right);
     }
 };
-<\pre><\code>
+</pre></code>
 ##控制逻辑边界
 查找机器人运动范围（剑指offer全文最后一道算法题），每次基于当前点，可以向上下左右四个方向移动，已经走过的路径不再次计数。而下面的例子加入了移动方向进行判断，如果刚刚是走过得位置，则不再去探索，同时已经走过的路径也不再进行探索，这样可以减少不必要的重复操作，提高运行效率，这就是合理控制逻辑边界。这里使用多种逻辑边界组合帮助递归正确退出。
 <pre><code>
@@ -160,7 +160,7 @@ int getSum(int number) {
     return sum;
 }
 
-<\pre><\code>
+</pre></code>
 
 
 最后，虽然递归有逻辑简单，代码清晰的优点，但是并不建议首先考虑用递归解决问题。好的程序还是需要通过深入解析写出更快捷、更巧妙的算法，而不是把问题交给机器暴力解决。当然递归加剪枝可以避开一些不必要的搜索，不过大部分还是有替代的办法。
