@@ -30,8 +30,7 @@ categories: Blog
 ##如何正确退出递归
 在递归调用语句前面加上逻辑判断，在特定情况下不再递归调用，以此结束递归。举个栗子，让程序员写一个按顺序打印数组，普通程序员一般会咔咔咔写下如下代码：
 
-<pre><code>
-std::vector<int>array = {1,2,3,4,5,6,7,8,9};
+<pre><code>std::vector<int>array = {1,2,3,4,5,6,7,8,9};
 for (int i = 0; i < array.size() ; i++) {
     printf("%d",array[i]);
 }
@@ -40,8 +39,7 @@ for (int i = 0; i < array.size() ; i++) {
 
 上面的代码一目了然，这当然不是我们需要的效果，而文艺程序员是怎么干的？下面的例子使用递归的方式按顺序打印数组，并且准确地在边界处结束递归。
 
-<pre><code>
-int main(int argc, const char * argv[]) {
+<pre><code>int main(int argc, const char * argv[]) {
     std::vector<int>array = {1,2,3,4,5,6,7,8,9};
     printfNumber(array, 0);
     return 0;
@@ -49,7 +47,6 @@ int main(int argc, const char * argv[]) {
 
 // 顺序打印 
 void printfNumber(std::vector<int>array, int i) {
-
     if (i == array.size()) return;
     printf("%d",array[i++]);
     printfNumber(array, i);
@@ -62,10 +59,8 @@ void printfNumber(std::vector<int>array, int i) {
 ##递归调用语句的位置
 递归调用语句的位置十分敏感，决定了其他语句什么时候执行，上面我们知道了如何按顺序打印数组，现在我们只需要将printf语句移至递归语句的后面，执行printf语句的顺序将倒置过来。
 
-<pre><code>
-// 逆序打印
+<pre><code>// 逆序打印
 void reversePrintfNumber(std::vector<int>array, int i) {    
-
     if (i == array.size()) return;
     printfNumber(array, ++i);
     printf("%d",array[--i]);
@@ -109,11 +104,9 @@ public:
 ##控制逻辑边界
 查找机器人运动范围（剑指offer全文最后一道算法题），每次基于当前点，可以向上下左右四个方向移动，已经走过的路径不再次计数。而下面的例子加入了移动方向进行判断，如果刚刚是走过得位置，则不再去探索，同时已经走过的路径也不再进行探索，这样可以减少不必要的重复操作，提高运行效率，这就是合理控制逻辑边界。这里使用多种逻辑边界组合帮助递归正确退出。
 
-<pre><code>
-#pragma mark - 记录机器人的运动范围
+<pre><code>#pragma mark - 记录机器人的运动范围
 int movingCount(int threshold, int rows, int cols)
 {
-    
     for (int i = 0; i < rows; i++) {
         std::vector<int> row;
         for (int j = 0; j < cols; j++) {
