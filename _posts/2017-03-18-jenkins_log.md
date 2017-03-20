@@ -16,8 +16,7 @@ categories: Blog
 
 #步骤
 **前提**：首先你得先折腾好打包工具吧，现在的教程都已经很多了，贴一下当时我看的教程：
-[1.Jenkins+GitHub+Xcode+fir自动打包教程](http://xuanyiliu.com/2016/09/22/Jenkins+GitHub+Xcode+fir/)
-
+[1.Jenkins+GitHub+Xcode+fir自动打包教程](http://xuanyiliu.com/2016/09/22/Jenkins+GitHub+Xcode+fir/)  
 [2.我在集成中遇到的一些问题和解决方案](http://blog.csdn.net/xietao3/article/details/52415256)
 
 
