@@ -17,7 +17,9 @@ categories: Blog
 #步骤
 **前提**：首先你得先折腾好打包工具吧，现在的教程都已经很多了，贴一下当时我看的教程：
 [1.Jenkins+GitHub+Xcode+fir自动打包教程](http://xuanyiliu.com/2016/09/22/Jenkins+GitHub+Xcode+fir/)
+
 [2.我在集成中遇到的一些问题和解决方案](http://blog.csdn.net/xietao3/article/details/52415256)
+
 
 1. 首先安装插件：``Environment Injector Plugin``,这里是[下载地址](http://updates.jenkins-ci.org/download/plugins/envinject/)，下载成功后``打开Jenkins``->``系统管理``->``管理插件``->``高级``->``拖至页面底部上传插件``->``选中文件点击上传``，提示成功后返回首页。
 ![上传插件.png](http://upload-images.jianshu.io/upload_images/1319710-fea298ade7e67c96.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/240)
@@ -26,7 +28,6 @@ categories: Blog
 <pre><code>CHANGELOG=$(curl -u username:password "http://localhost:8080/job/$JOB_NAME/$BUILD_NUMBER/api/xml?wrapper=changes&xpath=//changeSet//comment" | sed -e "s/<\/comment>//g; s/<comment>//g; s/<\/*changes>//g" | sed '/^$/d;G')
 echo CHANGELOG=$CHANGELOG > change_log_vars
 </pre></code>
-
 ![输出日志](http://upload-images.jianshu.io/upload_images/1319710-856bdc4e26e3821b.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/640)
 
 3. 设置commit日志保存路径：``增加构建步骤``->``Inject environment variables``->在``Properties File Path``输入``change_log_vars``。
@@ -36,7 +37,6 @@ echo CHANGELOG=$CHANGELOG > change_log_vars
 <pre><code>CHANGEAUTHOR=$(curl -u username:password "http://localhost:8080/job/$JOB_NAME/$BUILD_NUMBER/api/xml?wrapper=changes&xpath=//changeSet//fullName" | sed -e "s/<\/fullName>//g; s/<fullName>//g; s/<\/*changes>//g" | sed '/^$/d;G')
 echo CHANGEAUTHOR=$CHANGEAUTHOR > change_author_vars
 </pre></code>
-
 ![输出用户名](http://upload-images.jianshu.io/upload_images/1319710-656cce0c30a9ff09.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/640)
 
 5. 设置commit日志发布者保存路径：``增加构建步骤``->``Inject environment variables``->在``Properties File Path``输入``change_author_vars``。
@@ -46,7 +46,6 @@ echo CHANGEAUTHOR=$CHANGEAUTHOR > change_author_vars
 <pre><code>$CHANGELOG
 by $CHANGEAUTHOR
 </pre></code>
-
 注：如果没有安装fir插件[点击这里下载](http://7xju1s.com1.z0.glb.clouddn.com/fir-plugin-1.9.5.hpi)，和步骤1一样安装即可。
 ![fir](http://upload-images.jianshu.io/upload_images/1319710-9048fbd7b2340d54.jpeg?imageMogr2/auto-orient/strip%7CimageView2/2/w/640)
 
