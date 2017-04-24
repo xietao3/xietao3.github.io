@@ -11,15 +11,15 @@ url: "http://xietao3.com"
 permalink: /:year/:month/:title/
 
 # Format
-highlighter: rouge
+# highlighter: rouge
 
-markdown: redcarpet
-redcarpet:
-extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", tables]
+# markdown: redcarpet
+# redcarpet:
+# extensions: ["no_intra_emphasis", "fenced_code_blocks", "autolink", "strikethrough", "superscript", tables]
 
-# markdown: kramdown
-# kramdown:
-#   input: GFM
+markdown: kramdown
+kramdown:
+  input: GFM
 
 
 # supported colors: blue, green, purple, red, orange or slate. If you need clear, leave it empty.
