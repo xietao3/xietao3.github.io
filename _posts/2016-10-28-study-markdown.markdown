@@ -7,25 +7,25 @@ categories: Blog
 ---
 > 这个世界太浮夸了，做技术的攀比也这么严重，还是要想想自己想要的是什么，再出发。
 
-#前言
+# 前言
 + 这个是本人练手用滴，勿喷。
 
-#1、代码块
+# 1、代码块
 
-<p><pre><code>
+```
 NSSting *str = [[NSString alloc] init];
 
 str = @"123";
 
 NSLog(@"123")；
-</p></code></pre>
+```
 
 + Use the `printf()` function.
 + ``There is a literal backtick (`) here.``
 + Please don't use any `<blink>` tags.
 + `—` is the decimal-encoded equivalent of `—`.
 
-#2、列表
+# 2、列表
 > This is the first level of quoting.
 >
 > > This is nested blockquote.
@@ -49,11 +49,11 @@ NSLog(@"123")；
 > inside a list item.
 
 -----
-#3、链接
+# 3、链接
 [this is a link](http://blog.csdn.net/xietao3)
 <http://example.com/>
 - - -
-#4、强调
+# 4、强调
 *single asterisks*
 
 _single underscores_
@@ -66,9 +66,16 @@ un*frigging*believable
 
 \*this text is surrounded by literal asterisks\*
 
-#5、图片
+# 5、图片
 ![invalid pic](http://dd.png)
 ![valid pic](http://upload-images.jianshu.io/upload_images/1319710-083adc744ffcabb1.JPG?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
-#总结
+# 6、表格
+
+item1|item2
+-----|-----
+1|2
+11|22
+
+# 总结
 + 效果非常棒👍,简约大方。

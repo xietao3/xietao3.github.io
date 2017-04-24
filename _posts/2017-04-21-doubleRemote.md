@@ -35,7 +35,7 @@ categories: Git
 平时开发使用``Dev``分支，充分发挥在GitHub上推送拉取快速的优势，定期将``Dev``分支同步到``Secret``分支中。而一些敏感信息直接在``Secret``分支中修改，这样``Secret``分支保证了安全性，``Dev``分支保证了良好的体验。
 ![远程仓库各自的分支](http://upload-images.jianshu.io/upload_images/1319710-ef34b5bc8654da77.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/440)
 
-#操作使用
+# 操作使用
 
 #### 1.推送
 
