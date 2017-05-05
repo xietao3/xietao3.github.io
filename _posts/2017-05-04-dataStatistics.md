@@ -6,7 +6,7 @@ date: '2017-05-04 16:50:24 +0800'
 categories: iOS
 ---
 
-![](http://upload-images.jianshu.io/upload_images/1319710-09d59f4594c635e3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/640)
+![](http://upload-images.jianshu.io/upload_images/1319710-09d59f4594c635e3.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240)
 
 >手动埋点太麻烦了，谁用谁知道。
 
@@ -138,7 +138,6 @@ iOS大多数可点击UI控件都是基于``UIControl``，而所有的事件也�
 2017-05-03 16:06:38.766 CrashDemo[19408:832620] Crash Collect: UIStepper send action:stepperValueDidChange: to:ActionViewController frame:(x:113.00 y:279.00 w:94.00 h:29.00)
 2017-05-03 16:06:52.800 CrashDemo[19408:832620] Crash Collect: UISwitch send action:switchValueDidChange: to:ActionViewController frame:(x:135.50 y:160.00 w:51.00 h:31.00)
 2017-05-03 16:06:54.927 CrashDemo[19408:832620] Crash Collect: UIButton send action:buttonDidTouchUpInside: to:ActionViewController frame:(x:137.00 y:338.00 w:46.00 h:30.00)
-
 ```
 注意：UI控件 **拖线** 和 **代码添加** 的事件都可以监听到，如果控件未实现action事件，则无法监听。
 
