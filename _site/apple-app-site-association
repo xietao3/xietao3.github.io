@@ -1,0 +1,11 @@
+{
+    "applinks": {
+        "apps": [],
+        "details": [
+            {
+                "appID": "2A6G8X87KS.com.fruitday.Fruitday",
+                "paths": [ "/ios_link/*"]
+            }
+        ]
+    }
+}
