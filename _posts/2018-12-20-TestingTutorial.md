@@ -6,7 +6,7 @@ date: '2018-12-20 10:40:11 +0800'
 categories: iOS
 ---
 
-![](https://github.com/xietao3/Study-Plan/tree/master/TestingTutorial/src/preview.png)
+![](https://raw.githubusercontent.com/xietao3/Study-Plan/master/TestingTutorial/src/preview.png)
 
 ## 前言
 
@@ -73,7 +73,7 @@ XCTAssert(isToday, @"isToday false");
 * 快捷键``⌘ + U``测试全部用例
 * 使用命令行工具 xcodebuild 可以测试单个用例，也可以测试全部用例。
 
-![123](https://github.com/xietao3/Study-Plan/tree/master/TestingTutorial/src/1.1.png)
+![123](https://raw.githubusercontent.com/xietao3/Study-Plan/master/TestingTutorial/src/1.1.png)
 
 
 ### 1.3 性能测试
@@ -120,11 +120,11 @@ XCTAssert(isToday, @"isToday false");
 
 所有的性能测试需要设置一个``Baseline``来验证是否通过测试，没有设置的会提示``No baseline average for Time``。
 
-![1.2](https://github.com/xietao3/Study-Plan/tree/master/TestingTutorial/src/1.2.png)
+![1.2](https://raw.githubusercontent.com/xietao3/Study-Plan/master/TestingTutorial/src/1.2.png)
 
 我们可以通过点击``measureBlock:``方法左边菱形圆心 icon ，来设置``Baseline``,设置之后需要点击``save``保存。之后再执行测试用例时，如果成功，左边的icon会从圆心变成一个 ✅。
 
-![1.2](https://github.com/xietao3/Study-Plan/tree/master/TestingTutorial/src/1.3.png)
+![1.2](https://raw.githubusercontent.com/xietao3/Study-Plan/master/TestingTutorial/src/1.3.png)
 
 
 
@@ -220,7 +220,7 @@ XCTWaiterDelegate：如果委托是``XCTestCase``实例，下方代理被调用�
 * 代码编辑器左边栏
 * Report 导航栏
 
-![查看测试结果](https://github.com/xietao3/Study-Plan/tree/master/TestingTutorial/src/1.4.png)
+![查看测试结果](https://raw.githubusercontent.com/xietao3/Study-Plan/master/TestingTutorial/src/1.4.png)
 
 除此之外，我们还可以在 Report 导航栏中查看更加详细的测试报告:
 
@@ -231,7 +231,7 @@ XCTWaiterDelegate：如果委托是``XCTestCase``实例，下方代理被调用�
 - 嵌套的 activities
 - 测试覆盖率
 
-![](https://github.com/xietao3/Study-Plan/tree/master/TestingTutorial/src/1.5.png)
+![](https://raw.githubusercontent.com/xietao3/Study-Plan/master/TestingTutorial/src/1.5.png)
 
 ### 1.6 进行单元测试
 
@@ -320,7 +320,7 @@ UI 测试的步骤：
 
 选中 UI 测试类，你能再下方看到一个小红点，点击小红点开始录制你的交互。
 
-![](https://github.com/xietao3/Study-Plan/tree/master/TestingTutorial/src/2.1.png)
+![](https://raw.githubusercontent.com/xietao3/Study-Plan/master/TestingTutorial/src/2.1.png)
 
 在你进行交互时，Xcode 会自动转化成代码，你可以借此创建新的测试代码，也可以以此拓展已经存在的测试代码。当然它也不是十分完美，并不是总能如你所愿，还需要你做一些处理，比如说自动生成的代码过于繁琐，你可以用一些更简洁的代码实现。即使这样，UI Recording 也是非常高效的方式。
 
@@ -377,7 +377,7 @@ XCUIElement *addButton = app.buttons[@"add"];
 ```
 
 
-![](https://github.com/xietao3/Study-Plan/tree/master/TestingTutorial/src/2.2.png)
+![](https://raw.githubusercontent.com/xietao3/Study-Plan/master/TestingTutorial/src/2.2.png)
 
 通过类型加 identifier 的方式来定位的控件元素的方式，可以满足大多数场景。
 
@@ -436,7 +436,7 @@ XCTTAssertionEqual(app.tables.cells.cout, 1)
 
 大多数 UI 测试都是基于用户行为驱动，根据设计好的用户的操作流程，测试整个流程的结果。我设计了一个简单的笔记，主要有 3 步操作，分别是创建笔记、展示笔记和删除笔记，下面一起来看看如何进行测试。
 
-![](https://github.com/xietao3/Study-Plan/tree/master/TestingTutorial/src/2.3.png)
+![](https://raw.githubusercontent.com/xietao3/Study-Plan/master/TestingTutorial/src/2.3.png)
 
 ```
 // 测试主流程
@@ -525,7 +525,7 @@ XCTTAssertionEqual(app.tables.cells.cout, 1)
 
 测试过程:
 
-![](https://github.com/xietao3/Study-Plan/tree/master/TestingTutorial/src/2.4.gif)
+![](https://raw.githubusercontent.com/xietao3/Study-Plan/master/TestingTutorial/src/2.4.gif)
 
 
 ## 三、 拓展 Tips
@@ -594,11 +594,11 @@ XCUIApplication *anotherApp = [[XCUIApplication alloc] initWithBundleIdentifier:
 
 如果测试成功，可以在 Report 导航栏看到成功信息，它会按照你设置的模块分别展示测试结果。
 
-![](https://github.com/xietao3/Study-Plan/tree/master/TestingTutorial/src/3.1.png)
+![](https://raw.githubusercontent.com/xietao3/Study-Plan/master/TestingTutorial/src/3.1.png)
 
 如果测试失败，你可以看到哪些模块是成功的，和在哪些模块中失败了。
 
-![](https://github.com/xietao3/Study-Plan/tree/master/TestingTutorial/src/3.2.png)
+![](https://raw.githubusercontent.com/xietao3/Study-Plan/master/TestingTutorial/src/3.2.png)
 
 除此之外，你还可以尝试多层嵌套，activity 里面嵌套 activity。
 
@@ -624,11 +624,11 @@ attachment.name = @"MyScreenshot";
 
 在测试结束后，可以在 Report 导航栏中查看截图：
 
-![](https://github.com/xietao3/Study-Plan/tree/master/TestingTutorial/src/3.3.png)
+![](https://raw.githubusercontent.com/xietao3/Study-Plan/master/TestingTutorial/src/3.3.png)
 
 除此之外 Xcode 提供了自动截图的功能，可以帮助我们在每一个交互操作之后自动截图。此功能会产生大量截图，需要谨慎使用，一般情况最好勾选``Delete when each test succeeds``，需要在 Edit Scheme -> Test -> Options 中开启。
 
-![](https://github.com/xietao3/Study-Plan/tree/master/TestingTutorial/src/3.4.png)
+![](https://raw.githubusercontent.com/xietao3/Study-Plan/master/TestingTutorial/src/3.4.png)
 
 所以你可以根据你的需求选择适当的截图策略。
 
@@ -636,12 +636,12 @@ attachment.name = @"MyScreenshot";
 
 代码覆盖率在 Report 导航栏中查看，它除了可以帮你统计测试用例覆盖的代码百分比，还可以帮助你发现哪些代码是没有被测试用例覆盖的，需要在 Edit Scheme -> Test -> Options 中开启。
 
-![](https://github.com/xietao3/Study-Plan/tree/master/TestingTutorial/src/3.6.png)
+![](https://raw.githubusercontent.com/xietao3/Study-Plan/master/TestingTutorial/src/3.6.png)
 
 
 你还可以选择统计哪些 targets 的代码覆盖率，``all targets``表示统计项目内所有 targets 的覆盖率，``some targets``需要你手动添加 target ，只统计手动添加的 target 的覆盖率。
 
-![](https://github.com/xietao3/Study-Plan/tree/master/TestingTutorial/src/3.5.png)
+![](https://raw.githubusercontent.com/xietao3/Study-Plan/master/TestingTutorial/src/3.5.png)
 
 
 除了在 Report 导航栏中查看代码覆盖率的方式，你还可以借助苹果提供的命令行工具``xccov``来生成代码覆盖率报告。值得一提的是，``xccov``还能输出 JSON 格式的报告。
@@ -650,21 +650,21 @@ attachment.name = @"MyScreenshot";
 
 在 Xcode 10 中新增功能，在 Edit Scheme -> Test -> Info -> Tests 中可以通过取消勾选，来选择跳过部分测试用例。在 target 的 Options 选项中，``Automatically includes new tests``，选项是默认勾选的，新建的测试文件会自动添加进去。
  
-![](https://github.com/xietao3/Study-Plan/tree/master/TestingTutorial/src/3.7.png)
+![](https://raw.githubusercontent.com/xietao3/Study-Plan/master/TestingTutorial/src/3.7.png)
 
 
 ### 3.6 测试用例的执行顺序
 
 默认情况下，测试用例执行的顺序是按字母顺序来执行的，按固定顺序执行可能会使一些隐式的依赖关系无法被发现。现在有了随机的执行顺序，就可以挖掘出那些隐式的依赖关系。可以在 Edit Scheme -> Test -> Info -> Tests -> Options 中开启该功能。
 
-![](https://github.com/xietao3/Study-Plan/tree/master/TestingTutorial/src/3.8.png)
+![](https://raw.githubusercontent.com/xietao3/Study-Plan/master/TestingTutorial/src/3.8.png)
 
             
 ### 3.7 并行测试
 
 并行测试可以同时进行多个测试，从而节省大量时间。在测试时会启动多个模拟器，模拟器之间的数据都是隔离的，可以在 Edit Scheme -> Test -> Info -> Tests -> Options 中开启该功能。
 
-![](https://github.com/xietao3/Study-Plan/tree/master/TestingTutorial/src/3.9.png)
+![](https://raw.githubusercontent.com/xietao3/Study-Plan/master/TestingTutorial/src/3.9.png)
 
 对于并行测试的一些建议：
 
